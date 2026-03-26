@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug fuclaw (cmd/fuclaw)",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/cmd/fuclaw", // 依然指向源码目录
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      // 替换 buildFlags 为 output（更适配调试流程）
+      "output": "${workspaceFolder}/bin/fuclaw" // 明确指定编译后文件输出路径
+    }
+  ]
+}

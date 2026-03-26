@@ -27,6 +27,12 @@ go.work.sum
 # env file
 .env
 
+# sqlite db
+*.db
+
 # Editor/IDE
 # .idea/
 # .vscode/
+
+.trae/
+vendor
